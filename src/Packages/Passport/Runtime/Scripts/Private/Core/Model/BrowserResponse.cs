@@ -4,6 +4,7 @@ using Immutable.Passport.Json;
 
 namespace Immutable.Passport.Core
 {
+    [Preserve]
     public class BrowserResponse
     {
         public string responseFor;
@@ -13,6 +14,7 @@ namespace Immutable.Passport.Core
         public string error;
     }
 
+    [Preserve]
     public class StringResponse : BrowserResponse
     {
         public string result;
