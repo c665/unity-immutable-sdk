@@ -1,6 +1,6 @@
 using System;
-using UnityEngine;
 using Immutable.Passport.Json;
+using UnityEngine.Scripting;
 
 namespace Immutable.Passport.Core
 {
@@ -20,11 +20,13 @@ namespace Immutable.Passport.Core
         public string result;
     }
 
+    [Preserve]
     public class BoolResponse : BrowserResponse
     {
         public bool result;
     }
 
+    [Preserve]
     public static class BrowserResponseExtensions
     {
         /// <summary>
